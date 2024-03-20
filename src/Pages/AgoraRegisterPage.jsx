@@ -1,4 +1,5 @@
-import { AddIcon, ArrowForwardIcon } from "@chakra-ui/icons";
+import React, { useState } from "react";
+import Footer from "../Components/Footer";
 import {
   Accordion,
   AccordionButton,
@@ -11,12 +12,11 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { AddIcon, ArrowForwardIcon, MinusIcon } from "@chakra-ui/icons";
 import RegisterCarousel from "../Components/RegisterCarousel";
-import Footer from "../Components/Footer";
-import { MinusIcon } from "lucide-react";
+import AgoraRegisterCarousel from "../Components/AgoraRegisterCarousel";
 
-const Register = () => {
+const AgoraRegisterPage = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleAccordion = () => {
@@ -27,23 +27,27 @@ const Register = () => {
       <Box
         // border="1px solid red"
         position="absolute"
-        top={{ base: "56px", sm: "56px", md: "62px", lg: "118px", xl: "136px" }}
+        top={{ base: "56px", sm: "56px", md: "62px", lg: "118px", xl: "110px" }}
         left={0}
         w="100%"
-        backgroundImage="url(https://cdn.ihsmarkit.com/www/images/0522/Registration-Hero-1261x417_.png)"
+        backgroundImage="url(https://cdn.ihsmarkit.com/www/images/1022/ceraweek-registration-page-hero-2.jpg)"
         backgroundSize="cover"
         backgroundPosition="center"
       >
         <Box
-          bg="rgba(0, 0, 0, 0.6)"
+          bg="rgba(0, 0, 0, 0.4)"
           zIndex={11111}
-          w={{ base: "", sm: "", md: "50%", lg: "40%", xl: "32%" }}
+          //   w={{ base: "", sm: "", md: "100%", lg: "100%", xl: "100%" }}
           p="41px"
-          ml={{ base: "", sm: "", md: "", lg: "10rem", xl: "22rem" }}
         >
-          <Box color="white">
-            <Text fontSize="42px" lineHeight="48px" mb="13px">
-              Register for the Executive Conference
+          <Box
+            color="white"
+            ml={{ base: "", sm: "", md: "7rem", lg: "7rem", xl: "22rem" }}
+            // border="1px solid red"
+            w={{ base: "", sm: "", md: "50%", lg: "40%", xl: "30%" }}
+          >
+            <Text fontSize="42px" fontWeight={700} lineHeight="48px" mb="13px">
+              Register for the Innovation Agora{" "}
             </Text>
             <Text
               fontWeight="400"
@@ -80,23 +84,27 @@ const Register = () => {
           pt="30px"
         >
           <Text letterSpacing="1px" lineHeight="1.6" mb="24px">
-            Join global leaders, policymakers and executives from across energy,
-            climate, finance, technology, and industry at CERAWeek 2024 for
-            timely dialogue, shared learning and connection.{" "}
+            The Agora fosters the energy innovation ecosystem and advances
+            solutions to the world’s greatest energy and sustainability
+            challenges. The Agora is the premier global marketplace for ideas,
+            dialogue, new experiences, and connections. This exciting community
+            of startups, technologists, investors, academics, energy companies,
+            and government officials are all dedicated to shared learning and
+            exploration.
           </Text>
           <Text fontWeight="bold" fontSize="16px" mb="16px">
-            An Executive Conference pass includes access to both the Executive
-            Conference and the Innovation Agora
+            An Innovation Agora pass includes access to the Innovation Agora
+            only
           </Text>
-          <Text mb="24px">Fee $9,500</Text>
+          <Text mb="24px">Fee $1,750 </Text>
           <Button
             rightIcon={<ArrowForwardIcon />}
-            bg="brand.400"
+            bg="brand.600"
             color="white"
             fontWeight="bold"
             fontSize="18px"
             borderRadius="4px"
-            _hover={{ backgroundColor: "blue.700" }}
+            _hover={{ backgroundColor: "blue.600" }}
             mb="20px"
             mt="10px"
           >
@@ -112,13 +120,21 @@ const Register = () => {
             <Button
               variant="outline"
               borderWidth="2px"
-              borderColor="brand.600"
-              color="brand.600"
+              borderColor="brand.400"
+              color="brand.400"
               _hover={{ backgroundColor: "brand.600", color: "brand.200" }}
               rightIcon={<ArrowForwardIcon />}
               m="10px 20px 10px 0px"
+              fontSize={{
+                base: "10px",
+                sm: "20px",
+                md: "20px",
+                lg: "20px",
+                xl: "20px",
+              }}
+              // h={{ base: "100px", sm: "", md: "", lg: "", xl: "20px" }}
             >
-              INNOVATION AGORA REGISTRATION DETAILS
+              EXECUTIVE CONFERENCE REGISTRATION DETAILS{" "}
             </Button>
           </Center>
         </Box>
@@ -141,7 +157,7 @@ const Register = () => {
           {/* first */}
           <Box>
             <Image
-              src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-dan-yergin-press-releases-promo-16-9-1.jpg"
+              src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-88-speaker-grid-SIB-2.jpg"
               position="relative"
               w="100%"
               h="100%"
@@ -154,7 +170,7 @@ const Register = () => {
               //   border="1px solid red"
               w={{ base: "", sm: "", md: "", lg: "33%", xl: "30%" }}
               position="absolute"
-              top={{ base: "", sm: "", md: "", lg: "164px", xl: "160px" }}
+              top={{ base: "", sm: "", md: "", lg: "164px", xl: "250px" }}
               p="50px"
               color="brand.200"
             >
@@ -196,13 +212,13 @@ const Register = () => {
               objectFit="cover"
               filter={"brightness(80%)"}
               _hover={{ filter: "brightness(60%)", cursor: "pointer" }}
-              src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-88-speaker-grid-SIB-2.jpg"
+              src="https://cdn.ihsmarkit.com/www/images/0224/ceraweek-2024-agora-agenda-SIB-2.jpg"
             />
             <Box
               //   border="1px solid red"
               w={{ base: "", sm: "", md: "", lg: "33%", xl: "30%" }}
               position="absolute"
-              top={{ base: "", sm: "", md: "", lg: "164px", xl: "160px" }}
+              top={{ base: "", sm: "", md: "", lg: "164px", xl: "250px" }}
               p="50px"
               color="brand.200"
             >
@@ -243,12 +259,12 @@ const Register = () => {
               objectFit="cover"
               filter={"brightness(80%)"}
               _hover={{ filter: "brightness(60%)", cursor: "pointer" }}
-              src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-EC-and-Agora-agenda-SIB-3.jpg"
+              src="https://cdn.ihsmarkit.com/www/images/0423/ceraweek-2023-agora-ondemand-1-SIB-2.jpg"
             />
             <Box
               w={{ base: "", sm: "", md: "", lg: "33%", xl: "30%" }}
               position="absolute"
-              top={{ base: "", sm: "", md: "", lg: "164px", xl: "160px" }}
+              top={{ base: "", sm: "", md: "", lg: "164px", xl: "250px" }}
               p="50px"
               color="brand.200"
             >
@@ -287,7 +303,7 @@ const Register = () => {
           pb="24px"
           position="absolute"
           top={{
-            base: "80rem",
+            base: "90rem",
             sm: "60rem",
             md: "60rem",
             lg: "178rem",
@@ -302,7 +318,7 @@ const Register = () => {
           }}
         >
           {/* LastCarousel component */}
-          <RegisterCarousel />
+          <AgoraRegisterCarousel />
         </Box>
       </Center>
 
@@ -312,11 +328,11 @@ const Register = () => {
           textAlign="left"
           position="absolute"
           top={{
-            base: "108rem",
+            base: "120rem",
             sm: "120rem",
-            md: "89rem",
-            lg: "90rem",
-            xl: "90rem",
+            md: "100rem",
+            lg: "93rem",
+            xl: "95rem",
           }}
           borderBottom="1px solid black"
         >
@@ -328,11 +344,11 @@ const Register = () => {
           allowMultiple
           position="absolute"
           top={{
-            base: "114.5rem",
+            base: "127rem",
             sm: "124rem",
-            md: "93rem",
-            lg: "94rem",
-            xl: "94rem",
+            md: "104rem",
+            lg: "97rem",
+            xl: "99rem",
           }}
           w={{ base: "", sm: "96%", md: "96%", lg: "80%", xl: "65%" }}
         >
@@ -431,11 +447,11 @@ const Register = () => {
         <Button
           position="absolute"
           top={{
-            base: "135rem",
+            base: "155rem",
             sm: "140rem",
-            md: "110rem",
-            lg: "110rem",
-            xl: "110rem",
+            md: "120rem",
+            lg: "113rem",
+            xl: "115rem",
           }}
           left={{ base: "5", sm: "5", md: "5", lg: "9rem", xl: "21rem" }}
           variant="link"
@@ -455,11 +471,11 @@ const Register = () => {
         mt={3}
         position="absolute"
         top={{
-          base: "140rem",
+          base: "160rem",
           sm: "145rem",
-          md: "115rem",
-          lg: "114rem",
-          xl: "114rem",
+          md: "125rem",
+          lg: "116rem",
+          xl: "120rem",
         }}
       >
         <Footer />
@@ -468,4 +484,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default AgoraRegisterPage;

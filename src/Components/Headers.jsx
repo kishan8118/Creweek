@@ -43,6 +43,7 @@ const Headers = () => {
   const handleSearchToggle = () => {
     setIsSearchOpen(!isSearchOpen);
   };
+
   return (
     <Box
       display="flex"
@@ -75,6 +76,7 @@ const Headers = () => {
           <Menu>
             <MenuButton
               as={Button}
+              _expanded={{ bg: "none" }}
               bg="none"
               _hover={{ bg: "none" }}
               fontWeight="semibold"
@@ -86,7 +88,9 @@ const Headers = () => {
               <MenuItem _hover={{ bg: "brand.300" }}>
                 <Link to="/themes">2024 Themes</Link>
               </MenuItem>
-              <MenuItem _hover={{ bg: "brand.300" }}>2024 Agenda</MenuItem>
+              <Link to="/agenda">
+                <MenuItem _hover={{ bg: "brand.300" }}>2024 Agenda</MenuItem>
+              </Link>
             </MenuList>
           </Menu>
           <Text fontWeight="semibold">
@@ -96,6 +100,7 @@ const Headers = () => {
           <Menu>
             <MenuButton
               as={Button}
+              _expanded={{ bg: "none" }}
               bg="none"
               _hover={{ bg: "none" }}
               rightIcon={<ChevronDownIcon />}
@@ -110,12 +115,24 @@ const Headers = () => {
               <Link to="/about">
                 <MenuItem _hover={{ bg: "brand.300" }}>About</MenuItem>
               </Link>
+              <Link to="/speakers">
+                <MenuItem _hover={{ bg: "brand.300" }}>Speakers</MenuItem>
+              </Link>
+              <Link to="/agenda">
+                <MenuItem _hover={{ bg: "brand.300" }}>Agenda</MenuItem>
+              </Link>
+              <Link to="/sessions-formats">
+                <MenuItem _hover={{ bg: "brand.300" }}>
+                  Session Formats
+                </MenuItem>
+              </Link>
             </MenuList>
           </Menu>
 
           <Menu>
             <MenuButton
               as={Button}
+              _expanded={{ bg: "none" }}
               bg="none"
               _hover={{ bg: "none" }}
               rightIcon={<ChevronDownIcon />}
@@ -124,17 +141,16 @@ const Headers = () => {
               Agora
             </MenuButton>
             <MenuList>
-              <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
-              <MenuItem>Mark as Draft</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem>
+              <Link to="/agora-register">
+                <MenuItem>Register</MenuItem>
+              </Link>
             </MenuList>
           </Menu>
 
           <Menu>
             <MenuButton
               as={Button}
+              _expanded={{ bg: "none" }}
               bg="none"
               _hover={{ bg: "none" }}
               rightIcon={<ChevronDownIcon />}
@@ -142,18 +158,13 @@ const Headers = () => {
             >
               Featured Programs
             </MenuButton>
-            <MenuList>
-              <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
-              <MenuItem>Mark as Draft</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem>
-            </MenuList>
+            <MenuList></MenuList>
           </Menu>
 
           <Menu>
             <MenuButton
               as={Button}
+              _expanded={{ bg: "none" }}
               bg="none"
               _hover={{ bg: "none" }}
               rightIcon={<ChevronDownIcon />}
@@ -161,18 +172,13 @@ const Headers = () => {
             >
               Partnership
             </MenuButton>
-            <MenuList>
-              <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
-              <MenuItem>Mark as Draft</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem>
-            </MenuList>{" "}
+            <MenuList></MenuList>
           </Menu>
 
           <Menu>
             <MenuButton
               as={Button}
+              _expanded={{ bg: "none" }}
               bg="none"
               _hover={{ bg: "none" }}
               rightIcon={<ChevronDownIcon />}
@@ -181,11 +187,12 @@ const Headers = () => {
               Media
             </MenuButton>
             <MenuList>
-              <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
-              <MenuItem>Mark as Draft</MenuItem>
-              <MenuItem>Delete</MenuItem>
-              <MenuItem>Attend a Workshop</MenuItem>
+              <Link to="/news">
+                <MenuItem _hover={{ bg: "brand.300" }}>In the News</MenuItem>
+              </Link>
+              <Link to="/press">
+                <MenuItem _hover={{ bg: "brand.300" }}>Press Release</MenuItem>
+              </Link>
             </MenuList>
           </Menu>
         </Box>

@@ -82,7 +82,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -125,7 +125,7 @@ const CarouselCompo = () => {
           <Image
             w="-webkit-fill-available"
             position="relative"
-            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-88-speaker-grid-SIB-2.jpg"
+            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-live-stream-SIB-1.jpg"
           />
 
           <Box
@@ -150,7 +150,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -193,7 +193,7 @@ const CarouselCompo = () => {
           <Image
             w="-webkit-fill-available"
             position="relative"
-            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-speaker-announcement-bill-gates-SIB.jpg"
+            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-speakers-on-stage-SIB-1.jpg"
           />
 
           <Box
@@ -218,7 +218,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -261,7 +261,7 @@ const CarouselCompo = () => {
           <Image
             w="-webkit-fill-available"
             position="relative"
-            src="https://cdn.ihsmarkit.com/www/images/0123/ceraweek-2023-speakers-granholm-1-SIB.jpg"
+            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-88-speaker-grid-SIB-2.jpg"
           />
 
           <Box
@@ -286,7 +286,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -329,7 +329,7 @@ const CarouselCompo = () => {
           <Image
             w="-webkit-fill-available"
             position="relative"
-            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2023-speakers-al-jabar-1-SIB.jpg"
+            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-speaker-announcement-bill-gates-SIB.jpg"
           />
 
           <Box
@@ -354,7 +354,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -422,7 +422,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -490,7 +490,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -533,7 +533,7 @@ const CarouselCompo = () => {
           <Image
             w="-webkit-fill-available"
             position="relative"
-            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-agenda-DARK_BLUE-ec-and-agora-SIB-1.jpg"
+            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-EC-and-Agora-agenda-SIB-3.jpg"
           />
 
           <Box
@@ -558,7 +558,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
@@ -599,7 +599,7 @@ const CarouselCompo = () => {
           <Image
             w="-webkit-fill-available"
             position="relative"
-            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-dan-yergin-stage-blue-SIB-2.jpg"
+            src="https://cdn.ihsmarkit.com/www/images/0324/ceraweek-2024-EC-and-Agora-agenda-SIB-3.jpg"
           />
 
           <Box
@@ -624,7 +624,7 @@ const CarouselCompo = () => {
                 xl: "44px",
               }}
             >
-              Join us CERAWeek <br /> 2024
+              Join us CREWeek <br /> 2024
             </Text>
             <Text
               fontWeight="semibold"
