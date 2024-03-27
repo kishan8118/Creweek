@@ -146,7 +146,7 @@ const Homepage = () => {
             sm: "125rem",
             md: "105rem",
             lg: "115rem",
-            xl: "115rem",
+            xl: "118rem",
           }}
           templateColumns={{
             base: "repeat(1, 1fr)",
